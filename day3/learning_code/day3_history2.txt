@@ -1,0 +1,122 @@
+ 2161  cd main/
+ 2162  vim main.c
+ 2163  gcc main.c 
+ 2164  ls
+ 2165  gcc main.c -ladd
+ 2166  ./a.out 
+ 2167  vim main.c 
+ 2168  gcc main.c -ladd
+ 2169  ./a.out 
+ 2170  ls
+ 2171  gcc -c main.c
+ 2172  ll
+ 2173  nm main.o
+ 2174  gcc main.o -o main
+ 2175  gcc main.o -o main -ladd
+ 2176  ls
+ 2177  ./main 
+ 2178  ldd main
+ 2179  sudo rm /usr/lib/libadd.so 
+ 2180  ls
+ 2181  ./main 
+ 2182  ldd main
+ 2183  which cat
+ 2184  ldd /bin/cat
+ 2185  ls
+ 2186  cd ..
+ 2187  ls
+ 2188  sudo cp libadd.so /usr/lib
+ 2189  cd main/
+ 2190  ls
+ 2191  ./main 
+ 2192  cd ..
+ 2193  ls
+ 2194  cd ..
+ 2195  mkdir liba
+ 2196  ls
+ 2197  mv main.c include/
+ 2198  rm a.out 
+ 2199  cp libso/add.c liba
+ 2200  cd liba
+ 2201  ls
+ 2202  gcc -c add.c 
+ 2203  gcc -Wall -c add.c
+ 2204  ll
+ 2205  ar crsv libadd.a add.o
+ 2206  ll
+ 2207  sudo rm /usr/lib/libadd.so 
+ 2208  sudo cp libadd.a /usr/lib
+ 2209  ls
+ 2210  mkdir main
+ 2211  ls
+ 2212  cp ../libso/main/main.c main/
+ 2213  cd main/
+ 2214  ls
+ 2215  cat main.c 
+ 2216  gcc main.c -ladd
+ 2217  ls
+ 2218  ./a.out 
+ 2219  ldd a.out 
+ 2220  ./a.out 
+ 2221  sudo rm /usr/lib/libadd.a 
+ 2222  ./a.out 
+ 2223  cd /usr/lib
+ 2224  ls
+ 2225  ll
+ 2226  cd ~
+ 2227  ls
+ 2228  cd day3/
+ 2229  ls
+ 2230  cd libso/
+ 2231  ls
+ 2232  mv libadd.so libadd.so.1
+ 2233  ll
+ 2234  ln -s libadd.so.1 libadd.so
+ 2235  ll
+ 2236  mkdir lib
+ 2237  ls
+ 2238  mv libadd.so.1 lib
+ 2239  ls
+ 2240  ll
+ 2241  rm libadd.so 
+ 2242  ll
+ 2243  ln -s lib/libadd.so.1 libadd.so
+ 2244  ll
+ 2245  rm libadd.so 
+ 2246  ls
+ 2247  cd lib/
+ 2248  ls
+ 2249  mv libadd.so.1 ../
+ 2250  ls
+ 2251  cd ..
+ 2252  ls
+ 2253  sudo cp libadd.so.1 /usr/lib
+ 2254  cd /usr/lib
+ 2255  ls
+ 2256  sudo ln -s libadd.so libadd.so.1 
+ 2257  sudo ln -s libadd.so.1 libadd.so
+ 2258  ll
+ 2259  ./libadd.so
+ 2260  ./libadd.so.1 
+ 2261  cd ~/day3/libso/
+ 2262  ls
+ 2263  cd main/
+ 2264  ls
+ 2265  rm a.out main
+ 2266  gcc main.c -ladd
+ 2267  ./a.out 
+ 2268  ll
+ 2269  ldd a.out 
+ 2270  cd /usr/lib
+ 2271  ls
+ 2272  sudo mv libadd.so.1 libadd.so.2
+ 2273  ll
+ 2274  rm libadd.so
+ 2275  sudo rm libadd.so
+ 2276  sudo ln -s libadd.so.2 libadd.so
+ 2277  cd -
+ 2278  ls
+ 2279  ./a.out 
+ 2280  cd ~
+ 2281  history 
+ 2282  history |tail -122 >day3_history2.txt

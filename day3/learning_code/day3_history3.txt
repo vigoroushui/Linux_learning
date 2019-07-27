@@ -1,0 +1,73 @@
+ 2286  cd day3/
+ 2287  ls
+ 2288  cd compile/
+ 2289  ls
+ 2290  gcc -O1 test.c 
+ 2291  ls
+ 2292  gdb -v
+ 2293  cd ..
+ 2294  mkdir gdb
+ 2295  cd gdb/
+ 2296  vim main.c
+ 2297  ls
+ 2298  cp ../compile/test.c .
+ 2299  ls
+ 2300  rm main.c 
+ 2301  vim test.c 
+ 2302  gcc test.c 
+ 2303  ll
+ 2304  gdb a.out
+ 2305  gcc -g test.c 
+ 2306  gdb a.out 
+ 2307  rm test.c 
+ 2308  ls
+ 2309  gdb a.out
+ 2310  ls
+ 2311  cp ../compile/test.c .
+ 2312  ls
+ 2313  gcc test.c 
+ 2314  gdb a.out
+ 2315  gcc -g test.c 
+ 2316  gdb a.out
+ 2317  ls
+ 2318  vim test.c 
+ 2319  gcc -g test.c 
+ 2320  gdb a.out
+ 2321  vim test.c 
+ 2322  gcc -g test.c 
+ 2323  gdb a.out
+ 2324  ls
+ 2325  mkdir core
+ 2326  ls
+ 2327  cp test.c core/
+ 2328  cd core/
+ 2329  ls
+ 2330  mv test.c crash.c
+ 2331  vim crash.c 
+ 2332  gcc crash.c 
+ 2333  ./a.out 
+ 2334  vim crash.c 
+ 2335  gcc crash.c 
+ 2336  ./a.out 
+ 2337  vim crash.c 
+ 2338  gcc crash.c 
+ 2339  ./a.out 
+ 2340  ll
+ 2341  gcc -g crash.c 
+ 2342  ulimit -a
+ 2343  ulimit -c unlimited
+ 2344  gcc -g crash.c 
+ 2345  ./a.out 
+ 2346  ls
+ 2347  ll
+ 2348  gdb a.out core
+ 2349  ls
+ 2350  cd ..
+ 2351  ls
+ 2352  ./a.out 
+ 2353  echo $?
+ 2354  ./a.out 3 4
+ 2355  echo $?
+ 2356  cd ~
+ 2357  history 
+ 2358  history |tail -73 >day3_history3.txt

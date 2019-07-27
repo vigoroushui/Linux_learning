@@ -1,0 +1,45 @@
+ 2006  vim test.c
+ 2007  cat /usr/include/func.h 
+ 2008  ls
+ 2009  sudo rm /usr/include/func.h 
+ 2010  ls
+ 2011  vim func.h
+ 2012  sudo mv func.h /usr/include/
+ 2013  vim test.c
+ 2014  gcc
+ 2015  gcc -v
+ 2016  gcc test.c
+ 2017  ls
+ 2018  cat test.c 
+ 2019  gcc -E test.c -o test.i
+ 2020  vim test.i 
+ 2021  ./a.out 
+ 2022  vim test.i 
+ 2023  ls
+ 2024  gcc -S test.i -o test.s
+ 2025  vim test.s 
+ 2026  cp ../compile/test.c .
+ 2027  vim test.c
+ 2028  gcc -E test.c -o test.i
+ 2029  vim test.i 
+ 2030  gcc -S test.i -o test.s
+ 2031  vim test.s 
+ 2032  vim test.c 
+ 2033  gcc -E test.c -o test.i
+ 2034  gcc -S test.i -o test.s
+ 2035  vim test.s 
+ 2036  as test.s -o test.o
+ 2037  vim test.o
+ 2038  nm test.o
+ 2039  gcc test.o -o test
+ 2040  ll
+ 2041  ./test 
+ 2042  cat test.c 
+ 2043  rm a.out ;gcc test.c
+ 2044  ll
+ 2045  ./a.out 
+ 2046  vim test.py
+ 2047  kmkdir 
+ 2048  cd ..
+ 2049  tar cvzf day3.tar.gz day3
+ 2050  kscp day3.tar.gz 
