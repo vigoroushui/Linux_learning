@@ -1,0 +1,60 @@
+ 2011  vim func.c 
+ 2012  make
+ 2013  ls
+ 2014  rm func.o main.o main
+ 2015  ls
+ 2016  make
+ 2017  cat Makefile 
+ 2018  ll
+ 2019  ./main 
+ 2020  vim main.c 
+ 2021  make
+ 2022  ll
+ 2023  cat Makefile 
+ 2024  make
+ 2025  ./main 
+ 2026  vim Makefile 
+ 2027  make clean
+ 2028  ls
+ 2029  cat Makefile 
+ 2030  vim Makefile 
+ 2031  make
+ 2032  ./main 
+ 2033  cat main
+ 2034  cat Makefile 
+ 2035  ./main 
+ 2036  make clean;make
+ 2037  ./main 
+ 2038  vim Makefile 
+ 2039  make clean
+ 2040  make
+ 2041  ./main 
+ 2042  vim Makefile 
+ 2043  make clean
+ 2044  make
+ 2045  ls
+ 2046  vim Makefile 
+ 2047  make clean;make
+ 2048  ls
+ 2049  vim Makefile 
+ 2050  make clean;make
+ 2051  vim Makefile 
+ 2052  make clean;make
+ 2053  ./main 
+ 2054  vim Makefile 
+ 2055  make clean;make
+ 2056  vim Makefile 
+ 2057  make clean
+ 2058  make
+ 2059  ./main 
+ 2060  ls
+ 2061  vim sum.c
+ 2062  vim main.c
+ 2063  make
+ 2064  ./main 
+ 2065  cd ~
+ 2066  tar cvzf day4.tar.gz day4
+ 2067  history 
+ 2068  kmkdir 
+ 2069  kscp day4.tar.gz 
+ 2070  history |tail -60 >day4_history1.txt
