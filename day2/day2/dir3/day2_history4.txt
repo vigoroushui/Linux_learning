@@ -1,0 +1,140 @@
+ 2349  cd dir1
+ 2350  ls
+ 2351  ll
+ 2352  vim hanzi.txt 
+ 2353  ll
+ 2354  cat hanzi.txt 
+ 2355  iconv -f gd2312 -t utf-8 hanzi.txt >hanzi_linux
+ 2356  iconv -f gb2312 -t utf-8 hanzi.txt >hanzi_linux
+ 2357  cat hanzi_linux 
+ 2358  ll
+ 2359  vim hanzi_linux 
+ 2360  ls
+ 2361  cd ..
+ 2362  ls
+ 2363  grep main main.c
+ 2364  cat main.c
+ 2365  vim main.c 
+ 2366  grep int main.c
+ 2367  grep ^int main.c
+ 2368* 
+ 2369  grep \;$ main.c
+ 2370  cat main.c
+ 2371  grep p.* main.c
+ 2372  grep p main.c
+ 2373  grep p.*f main.c
+ 2374  grep p.f main.c
+ 2375  grep FILE /usr/include/stdio.h
+ 2376  ls
+ 2377  cat main.c 
+ 2378  grep f[o-p] main.c
+ 2379  ls
+ 2380  vim main.c
+ 2381  grep ^ main.c
+ 2382  grep -F ^ main.c
+ 2383  grep printf main.c
+ 2384  grep -c printf main.c
+ 2385  grep -n printf main.c
+ 2386  cd ..
+ 2387  ls
+ 2388  cd day17
+ 2389  ls
+ 2390  find . -name *.c
+ 2391  find . -name *.c|xargs grep main
+ 2392  ls /etc
+ 2393  ls /etc|wc -l
+ 2394  ls /etc|wc -w
+ 2395  ls -l /etc|wc -w
+ 2396  ls -l /etc|wc -l
+ 2397  cd ../day2
+ 2398  ls -l
+ 2399  ls |wc -l
+ 2400  ls -l|wc -l
+ 2401  ll
+ 2402  umask
+ 2403  umask 000
+ 2404  touch file10
+ 2405  ll
+ 2406  mkdir dir3
+ 2407  ll
+ 2408  cd ~
+ 2409  vim ~/.bashrc 
+ 2410  cd -
+ 2411  ls
+ 2412  tar cfv file.tar file*
+ 2413  ll
+ 2414  tar rf file.tar main.c
+ 2415  ll
+ 2416  echo hello >file11
+ 2417  tar rf file.tar file11
+ 2418  ll
+ 2419  ls -l
+ 2420  rm file[1-9] main.c
+ 2421  ll
+ 2422  rm file1[0-1]
+ 2423  ls
+ 2424  tar -xf file.tar 
+ 2425  ll
+ 2426  rm file.tar;tar cfvz new.tar.gz file* main.c
+ 2427  ll
+ 2428  rm new.tar.gz 
+ 2429  tar cfvz new.tar.gz file* main.c The_Holy_Bible.txt 
+ 2430  ll
+ 2431  rm file* main.c The_Holy_Bible.txt
+ 2432  ll
+ 2433  tar -xf new.tar.gz 
+ 2434  ls
+ 2435  ll
+ 2436  gzip The_Holy_Bible.txt 
+ 2437  ll
+ 2438  gzip -dv The_Holy_Bible.txt.gz 
+ 2439  ll
+ 2440  gzip -v The_Holy_Bible.txt 
+ 2441  ll
+ 2442  gzip -d The_Holy_Bible.txt.gz 
+ 2443  ll
+ 2444  bzip2 -v The_Holy_Bible.txt 
+ 2445  ll
+ 2446  bzip2 -d The_Holy_Bible.txt.bz2 
+ 2447  ll
+ 2448  cd /var/log
+ 2449  ll
+ 2450  cd -
+ 2451  ls
+ 2452  ping 192.168.2.100
+ 2453  ifconfig
+ 2454  ssh test@192.168.2.100
+ 2455  ls
+ 2456  scp day2_history3.txt test@192.168.2.100:~
+ 2457  ssh test@192.168.2.100
+ 2458  ls
+ 2459  rm day2_history3.txt
+ 2460  scp test@192.168.2.100:~/day2_history3.txt .
+ 2461  ll
+ 2462  ssh test@192.168.2.100
+ 2463  which kscp
+ 2464  cat /usr/bin/kscp
+ 2465  kscp new.tar.gz 
+ 2466  date -d "0 week" +%Y%m%d
+ 2467  cp /usr/bin/kscp gscp
+ 2468  ls
+ 2469  vim gscp 
+ 2470  ls
+ 2471  mkdir dir3
+ 2472  mv gscp dir3
+ 2473  ls
+ 2474  cd dir3
+ 2475  ls
+ 2476  ./gscp 
+ 2477  ls
+ 2478  sudo cp gscp /usr/bin
+ 2479  echo $PATH
+ 2480  sudo rm /usr/bin/gscp 
+ 2481  ls
+ 2482  sudo cp gscp /usr/bin
+ 2483  ls
+ 2484  kscp gscp 
+ 2485  cd ..
+ 2486  ls
+ 2487  history 
+ 2488  history |tail -140 >day2_history4.txt

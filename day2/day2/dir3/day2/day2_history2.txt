@@ -1,0 +1,118 @@
+ 2122  sudo vim /usr/bin/kmkdir 
+ 2123  kmkdir 
+ 2124  sudo vim /usr/bin/kmkdir 
+ 2125  kscp day2_history1.txt 
+ 2126  ls
+ 2127  ll
+ 2128  echo -n > file
+ 2129  ll
+ 2130  ls
+ 2131  clear
+ 2132  find /usr/include/ -name stdio.h
+ 2133  find /usr/include/ -name stdio.h -exec ls -l {} \;
+ 2134  find /usr/include/ -name stdio.h|xargs ls -l
+ 2135  ls
+ 2136  find . -name file
+ 2137  find . -name file|xargs ls -l
+ 2138  ls -l ./dir1/file
+ 2139  find . -name file|xargs rm -rf
+ 2140  find . -name file
+ 2141  ls
+ 2142  ls dir1
+ 2143  ls
+ 2144  ls|wc -l\
+ 2145  ls|wc -l
+ 2146  cd ~
+ 2147  ls|wc -l
+ 2148  pwd
+ 2149  ls
+ 2150  ls|wc -l
+ 2151  find /usr/include/ -name stdio.h
+ 2152  find /usr/include/ -name stdio.h|wc -l
+ 2153  df -h
+ 2154  kssh 
+ 2155  cd day2
+ 2156  ll
+ 2157  ls *
+ 2158  mv echo.sh dir2
+ 2159  ll
+ 2160  du -h 
+ 2161  cd ~
+ 2162  du -h
+ 2163  du -h --max-depth=0
+ 2164  du -h --max-depth=1
+ 2165  ls
+ 2166  cd ~
+ 2167  du -h --max-depth=1
+ 2168  cd ~
+ 2169  pwd
+ 2170  cd ..
+ 2171  du -h --max-depth=1
+ 2172  sudo du -h --max-depth=1
+ 2173  sudo du -h --max-depth=2
+ 2174  cd -
+ 2175  cd day2
+ 2176  ls
+ 2177  cat dir2/echo.sh 
+ 2178  cat /etc/passwd
+ 2179  cat /etc/shadow
+ 2180  ls -l /etc/shadow
+ 2181  sudo cat /etc/shadow
+ 2182  ls
+ 2183  ll
+ 2184  vim file1
+ 2185  cat file1
+ 2186  cat -b file1
+ 2187  cat -E file1
+ 2188  cat -n file1
+ 2189  cat -s file1
+ 2190  echo I hen niu
+ 2191  echo I hen niu >file2
+ 2192  cat file2
+ 2193  ls
+ 2194  vim main.c
+ 2195  gcc main.c 
+ 2196  ll
+ 2197  ./a.out 
+ 2198  cat file2
+ 2199  ./a.out >>file2
+ 2200  cat file2 
+ 2201  ./a.out >file2
+ 2202  cat file2 
+ 2203  ls
+ 2204  vim main.c 
+ 2205  gcc main.c 
+ 2206  ./a.out 
+ 2207  ./a.out >file2
+ 2208  cat file2
+ 2209  ./a.out 2>file3
+ 2210  cat file3
+ 2211  ll
+ 2212  mv a.out main
+ 2213  ./main 
+ 2214  ll
+ 2215  ./main >file4 2>&1
+ 2216  cat file4
+ 2217  ./main 
+ 2218  cat main.c 
+ 2219  ls
+ 2220  ll
+ 2221  rm filo1
+ 2222  ls
+ 2223  echo >file5
+ 2224  ll
+ 2225  echo -n >file6
+ 2226  ll
+ 2227  touch file7
+ 2228  ll
+ 2229  cat >file7 <file2
+ 2230  cat file7
+ 2231  cat >file8
+ 2232  ll
+ 2233  head -n 3 main.c
+ 2234  head -3 main.c
+ 2235  tail -2 main.c
+ 2236  head -10 day2_history1.txt 
+ 2237  tail -10 day2_history1.txt 
+ 2238  history 
+ 2239  history |tail -118 >day2_history2.txt

@@ -1,0 +1,150 @@
+ 2475  ls
+ 2476  ./gscp 
+ 2477  ls
+ 2478  sudo cp gscp /usr/bin
+ 2479  echo $PATH
+ 2480  sudo rm /usr/bin/gscp 
+ 2481  ls
+ 2482  sudo cp gscp /usr/bin
+ 2483  ls
+ 2484  kscp gscp 
+ 2485  cd ..
+ 2486  ls
+ 2487  history 
+ 2488  history |tail -140 >day2_history4.txt
+ 2489  kscp day2_history4.txt 
+ 2490  ls
+ 2491  cd dir3/
+ 2492  ls
+ 2493  ll
+ 2494  kssh 
+ 2495  ssh test@192.168.2.100
+ 2496  cd ~
+ 2497  cd .ssh/
+ 2498  ls
+ 2499  pwd
+ 2500  cp * backup/
+ 2501  ls
+ 2502  ll
+ 2503  cat backup
+ 2504  ls backup/
+ 2505  ls
+ 2506  rm id_rsa*
+ 2507  ls
+ 2508  ssh-keygen 
+ 2509  ll
+ 2510  kssh 
+ 2511  ssh test@192.168.2.100
+ 2512  ls
+ 2513  scp id_rsa.pub test@192.168.2.100:~
+ 2514  ssh test@192.168.2.100
+ 2515  ls
+ 2516  pwd
+ 2517  ssh test@192.168.2.100
+ 2518  ls
+ 2519  cd ..
+ 2520  ls
+ 2521  cd day2
+ 2522  ls
+ 2523  ssh test@192.168.2.100 "ls ~"
+ 2524  ls
+ 2525  scp test@192.168.2.100:~/day2_history3.txt .
+ 2526  ls
+ 2527  cd dir3/
+ 2528  ls
+ 2529  rm -rf day2* new.tar.gz 
+ 2530  ls
+ 2531  gscp
+ 2532  ls
+ 2533  route
+ 2534  route -n
+ 2535  vim
+ 2536  vim -V
+ 2537  ls
+ 2538  cd ..
+ 2539  ls
+ 2540  rm file*
+ 2541  ls
+ 2542  vim file1
+ 2543  ls
+ 2544  vim The_Holy_Bible.txt 
+ 2545  cd ~
+ 2546  pwd
+ 2547  ls
+ 2548  cat vimrc 
+ 2549  vim vimrc 
+ 2550  cp vimrc vimrc_backup
+ 2551  vim vimrc
+ 2552  pwd
+ 2553  vim .vimrc
+ 2554  kscp vimrc
+ 2555  pwd
+ 2556  cd .ssh/
+ 2557  ls
+ 2558  cd backup/
+ 2559  ls
+ 2560  cp id_rsa* ../
+ 2561  kssh 
+ 2562  ls
+ 2563  cd ~
+ 2564  ls
+ 2565  cd day2
+ 2566  ls
+ 2567  vim main.c
+ 2568  vim file1 
+ 2569  ll
+ 2570  vim file1 
+ 2571  ll
+ 2572  vim file1 
+ 2573  vim +3 main.c
+ 2574  vim +/printf main.c
+ 2575  vim file1 
+ 2576  vim main.c
+ 2577  cp main.c main1.c
+ 2578  grep printf *.c
+ 2579  sed "s/printf/puts/g" main.c
+ 2580  cat main.c
+ 2581  sed -i "s/printf/puts/g" *.c
+ 2582  grep printf *.c
+ 2583  grep puts *.c
+ 2584  ll
+ 2585  ls dir1
+ 2586  ls dir2
+ 2587  mv main.c dir2
+ 2588  find . -name *.c
+ 2589  find . -name "*.c"
+ 2590  cat ./dir3/day2/main.c
+ 2591  find . -name "*.c"|xargs sed -i "s/puts/printf/g"
+ 2592  find . -name "*.c"|xargs grep printf
+ 2593  find . -name "*.c"|xargs grep puts
+ 2594  vimdiff main1.c dir2/main.c 
+ 2595  vim main1.c 
+ 2596  vimdiff main1.c dir2/main.c 
+ 2597  vim main1.c 
+ 2598  cd ~
+ 2599  vim .bashrc 
+ 2600  echo $PS1
+ 2601  vim .bashrc 
+ 2602  . .bashrc 
+ 2603  echo $PS1
+ 2604  vim .bashrc 
+ 2605  . .bashrc 
+ 2606  vim .bashrc 
+ 2607  . .bashrc 
+ 2608  pwd
+ 2609  vim .bashrc 
+ 2610  source .bashrc 
+ 2611  umask 
+ 2612  alias 
+ 2613  alias ll='ls -l'
+ 2614  ll
+ 2615  alias 
+ 2616  cd day2/
+ 2617  ls
+ 2618  rm new.tar.gz new.tar.gz 
+ 2619  ls
+ 2620  cd ..
+ 2621  ls
+ 2622  kscp day2
+ 2623  history 
+ 2624  history |tail -150 >day2_history5.txt

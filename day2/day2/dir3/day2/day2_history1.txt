@@ -1,0 +1,122 @@
+ 1998  ping www.baidu.com
+ 1999  ping 192.168.5.1
+ 2000  ping www.baidu.com
+ 2001  adduser hanmeimei
+ 2002  sudo adduser hanmeimei
+ 2003  su
+ 2004  ls -l /
+ 2005  cd ~
+ 2006  pwd
+ 2007  rm -rf day2
+ 2008  mkdir day2
+ 2009  rm -rf day2;mkdir day2
+ 2010  cd day2
+ 2011  mkdir dir1
+ 2012  ll
+ 2013  chmod o+w dir1
+ 2014  ll
+ 2015  ll dir1/
+ 2016  rmdir dir1/dir2
+ 2017  ll dir1/
+ 2018  ls
+ 2019  chmod o-w dir1
+ 2020  ll
+ 2021  chmod u=r dir1
+ 2022  ll
+ 2023  chmod g-r dir1
+ 2024  ll
+ 2025  chmod a-w dir1
+ 2026  ll
+ 2027  chmod +w dir1
+ 2028  ll
+ 2029  chmod a+w dir1
+ 2030  ll
+ 2031  chmod 777 dir1
+ 2032  ll
+ 2033  chmod 444 dir1
+ 2034  ll
+ 2035  chmod 666 dir1
+ 2036  ll
+ 2037  cd dir1
+ 2038  chmod 775 dir1
+ 2039  ll
+ 2040  vim echo.sh
+ 2041  ./echo.sh
+ 2042  ll
+ 2043  chmod +x echo.sh 
+ 2044  ll
+ 2045  ./echo.sh 
+ 2046  find /usr/include/ -name stdio.h
+ 2047  ls
+ 2048  mkdir dir1/file
+ 2049  touch file
+ 2050  ll
+ 2051  find . -name file
+ 2052  find . -name file -a -type f
+ 2053  find . -name file -a -type d
+ 2054  find /usr/include/ -name stdio.h -o -name stdlib.h
+ 2055  find . -name file
+ 2056  find . ! -name file
+ 2057  find /usr/include/ -name std*.h
+ 2058  ls
+ 2059  touch file1
+ 2060  touch file2
+ 2061  touch file3
+ 2062  touch file4
+ 2063  ls
+ 2064  find . -name file*
+ 2065  find . -name "file*"
+ 2066  find . -name "file?"
+ 2067  find . -name "file[1-2]"
+ 2068  touch filo1
+ 2069  find . -name "fil[a-z][1-2]"
+ 2070  cd ~
+ 2071  find . -name "*.c"
+ 2072  cat /etc/passwd
+ 2073  cd -
+ 2074  ls
+ 2075  find . -uid 1000
+ 2076  find . -user luke
+ 2077  cd /home
+ 2078  ls
+ 2079  find . -user xiongda
+ 2080  cat /etc/passwd
+ 2081  ls
+ 2082  find . -user hanmeimei
+ 2083  cd ./guangtouqiang
+ 2084  ls -al
+ 2085  cd ~
+ 2086  ls
+ 2087  cd day2
+ 2088  ls
+ 2089  find . -empty
+ 2090  mkdir dir2
+ 2091  find . -empty
+ 2092  ls
+ 2093  ll
+ 2094  chmod 666 file3
+ 2095  ll
+ 2096  find . -perm 666
+ 2097  find . -perm 664
+ 2098  find . -perm 775
+ 2099  find . -size 1
+ 2100  ll
+ 2101  find . -size 8
+ 2102  ls -l dir1
+ 2103  echo >file
+ 2104  ll
+ 2105  cat fil
+ 2106  cat file
+ 2107  find . -size 1
+ 2108  man fine
+ 2109  man find
+ 2110  find . -size 1c
+ 2111  find . -mmin 5
+ 2112  find . -mmin -5
+ 2113  ll
+ 2114  date
+ 2115  find . -mmin +5
+ 2116  who
+ 2117  kmkdir 
+ 2118  history 
+ 2119  history |tail -122 >day2_history1.txt

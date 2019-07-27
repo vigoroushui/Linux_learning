@@ -1,0 +1,261 @@
+    1  ping baidu.com
+    2  su user
+    3  su root
+    4  exit
+    5  su
+    6  exit
+    7  sudo useradd lmy
+    8  sudo userdel lmy
+    9  ls
+   10  exit
+   11  cd
+   12  userdel lmy
+   13  su
+   14  exit
+   15  cat /etc/passwd
+   16  sudo userdel -r huiyi
+   17  ls
+   18  sudo userdel -r lmy
+   19  sudo userdel -r xty
+   20  exit
+   21  cd /
+   22  cd /home
+   23  ls
+   24  cd lmy
+   25  cd -
+   26  rm -f /home/lmy
+   27  rmdir lmy
+   28  rmdir -f /home/lmy
+   29  rmdir --help
+   30  sudo passwd root
+   31  su
+   32  exit
+   33  ls -a /root/home
+   34  ls -l /root/home
+   35  cd /home/vigoroushui
+   36  ls
+   37  cd day1
+   38  tree
+   39  ls
+   40  cd day1
+   41  mkdir dir1
+   42  mkdir dir1/dir2
+   43  rmdir dir2
+   44  rmdir dir1
+   45  cd dir1
+   46  rmdir dir2
+   47  rmdir dir1
+   48  cd day1
+   49  cd ..
+   50  cd
+   51  ls
+   52  cat /etc/passwd
+   53  sudo useradd -m lmy -s /bin/bash
+   54  su lmy
+   55  sudo passwd lmy
+   56  su
+   57  su
+   58  su xty
+   59  su
+   60  xyh
+   61  su
+   62  sudo useradd -m xty /bin/bash
+   63  useradd -m xty -s /bin/bash
+   64  sudo useradd -m xty -s /bin/bash
+   65  su
+   66  ifconfig
+   67  ipconfig
+   68  ifconfig
+   69  ping www.baidu.com
+   70  sudo apt install ssh
+   71  ps -elf|grep ssh
+   72  sudo apt install vim
+   73  ifconfig
+   74  sudp apt install net-tools
+   75  sudo apt install net-tools
+   76  ifconfig
+   77  ping www.baidu.com
+   78  ifconfig
+   79  ls
+   80  ll
+   81  cat /etc/passwd
+   82  rmdir dir1/dir2
+   83  mkdir dir2
+   84  ll dir1/
+   85  ls
+   86  chmod o-w dir1
+   87  ll
+   88  chmod u=r dir1
+   89  ll
+   90  chmod g-r dir1
+   91  ll
+   92  chmod a-w dir1
+   93  ll
+   94  chmod +w dir1
+   95  ll
+   96  chmod a+w dir1
+   97  ll
+   98  chmod 777 dir1
+   99  ll
+  100  chmod 44
+  101  chmod 444 dir1
+  102  ll
+  103  chmod 666 dir1
+  104  ll
+  105  cd dir1
+  106  chmod 775 dir1
+  107  ll
+  108  vim echo.sh
+  109  ./echo.sh
+  110  ll
+  111  chmod +x echo.sh
+  112  ll
+  113  ./echo.sh
+  114  vim echo.sh
+  115  ./echo.sh
+  116  find /usr/include/ -name stdio.h
+  117  ls
+  118  mkdir dir1/file
+  119  touch file
+  120  ll
+  121  find . -name file
+  122  find . -name file -a -type f
+  123  find . -name file -a -type d
+  124  find /usr/include/ -name stdio.h -o -name stdlib.h
+  125  find . -name file
+  126  find . ! -name file
+  127  find /usr/include/ -name std*.h
+  128  ls
+  129  touch file1
+  130  touch file2
+  131  touch file3
+  132  touch file4
+  133  ls
+  134  find . -name file*
+  135  find . -name "file*"
+  136  find . -name "file?"
+  137  find . -name "file[1-2]"
+  138  cd /
+  139  ls
+  140  ls /
+  141  cd /home
+  142  ls
+  143  ifconfig
+  144  cd~
+  145  cd ~
+  146  mkdir day2
+  147  cd day2
+  148  mkdir dir1
+  149  ll
+  150  cd ~
+  151  sudo apt install gcc
+  152  date
+  153  find . -mmin -5
+  154  find . -mmin +5
+  155  who
+  156  ls -l /
+  157  cd ~
+  158  pwd
+  159  adduser hanmeimei
+  160  cd day2
+  161  ls
+  162  ls /
+  163  ls ../
+  164  ll
+  165  chmod o+w dir1
+  166  ll
+  167  ll dir1/
+  168  sudo passwd root
+  169  sudo adduser hanmeimei
+  170  sudo userdel -r  hanmeimei 
+  171  su
+  172  find /usr/include stdlib.h
+  173  scp test@192.168.2.100:~/day2_history3.txt .
+  174  scp The_Holy_Bible.txt  xuyuhui@192.168.2.212:~/
+  175  scp The_Holy_Bible.txt  xuyuhui@192.168.5.212:~/
+  176  which kscp
+  177  ls
+  178  ll
+  179  rm file*
+  180  ll
+  181  vim gscp
+  182  ll
+  183  rm gscp
+  184  echo $PATH
+  185  kssh
+  186  ssh test@192.168.5.145
+  187  cd~
+  188  cd ~
+  189  c .ssh/
+  190  cd .ssh/
+  191  ls
+  192  pwd
+  193  ssh
+  194  ssh-keygen
+  195  ll
+  196  ssh test@192.168.2.100
+  197  ls
+  198  scp id_rsa.pub test@192.168.2.100:~
+  199  ssh test@192.168.2.100
+  200  cd ~
+  201  ls
+  202  cd day2
+  203  ls
+  204  cd dir3
+  205  ls
+  206  ssh liankang@192.168.5.212 "ls ~"
+  207  mkdir 辉哥真帅，是吧老李~
+  208  scp 辉哥真帅，是吧老李~ liankang@192.168.5.212:~
+  209  ls
+  210  scp 辉哥真帅，是吧老李~ liankang@192.168.5.212:~/
+  211  rmdir 辉哥真帅，是吧老李~
+  212  mkdir huigezhenshuai!
+  213  rmdir huigezhenshuai!
+  214  touch 辉哥真帅，是吧老李~
+  215  scp 辉哥真帅，是吧老李~ liankang@192.168.5.212:~/
+  216  route
+  217  route -n
+  218  sudo passwd root
+  219  cd ..
+  220  ls
+  221  vim file1
+  222  ls
+  223  vim The_Holy_Bible.txt
+  224  vim main.c
+  225  history The_Holy_Bible.txt|head -10 > Bible_head10.txt
+  226  ls -a The_Holy_Bible.txt
+  227  ls -l The_Holy_Bible.txt
+  228  ls -r The_Holy_Bible.txt
+  229  cat The_Holy_Bible.txt|head -10
+  230  cat The_Holy_Bible.txt|head -10 >The_Holy_Bible_head10.txt
+  231  vim main.c
+  232  vim +3 main.c
+  233  vim main.c
+  234  cp mian.c main1.c
+  235  cp main.c main1.c
+  236  grep printf *.c
+  237  sed "s/printf/puts/g" main.c
+  238  sed -i "s/printf/puts/g" *.c
+  239  find . -name "*.c"|xargs sed -i "s/puts/printf/g"
+  240  vimdiff main.c main.cc
+  241  .bashrc
+  242  vim .bashrc
+  243  echo $PS1
+  244  cd ~
+  245  vim .bashrc
+  246  . .bashrc
+  247  pwd
+  248  vim .bashrc
+  249  ll
+  250  source .bashrc
+  251  umask
+  252  cd
+  253  cd day2
+  254  ll
+  255  ls
+  256  umask 022
+  257  mkdir 644 dir4
+  258  ll
+  259  chmod 666 dir4
+  260  ll
+  261  history >day2_lianxi.txt
